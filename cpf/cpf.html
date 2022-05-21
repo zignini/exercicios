@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de CPF</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>Validador de CPF</h1>
+        </div>
+        <div class="row">
+            <p>Um validador de CPF, feito para seguir o módulo de JavaScript básico do Gama Academy via Hiring Coders
+                #3.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <form>
+                    <label for="cpf">Insira o CPF (apenas números):</label>
+                    <input type="number" id="cpf" name="cpf" placeholder="Ex.: 12345678901" required>
+                    <button type="button" onclick="check()">Validar</button>
+                    <!-- onclick não parece funcionar com enter, por exemplo. Será que usando button type submit ou algo assim ajuda? -->
+                </form>
+            </div>
+        </div>
+        <div class="container page-header">
+            <div id="success" class="alert alert-success" style="display: none;" role="alert">
+                <strong>Sim!</strong> Esse CPF é válido.
+            </div>
+            <div id="error" class="alert alert-danger" style="display: none;" role="alert">
+                <strong>Não!</strong> Esse CPF não é válido.
+            </div>
+        </div>
+    
+
+    </div>
+
+    <script src=".\cpf.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
