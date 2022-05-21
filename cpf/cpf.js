@@ -1,6 +1,6 @@
 console.log("Alô aqui é o JS")
 
-function check() {
+function checkNumber() {
     // console.log("Início da checagem")
     
     let userInput = document.getElementById("cpf").value;
@@ -9,7 +9,6 @@ function check() {
 
     success.style.display = "none";
     error.style.display = "none";
-    
 
     if (isValidCPF(userInput)) {
         console.log("Foi!");
