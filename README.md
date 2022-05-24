@@ -7,7 +7,7 @@ Repositório com exercícios de aprendizado e prática.
 1. [Array: mínimo, máximo e média](js/array.js)
 2. [IMC: cálculo](js/IMC.js)¹
 3. [Par: o número é par?](js/par.js)
-4. [Validador de CPF](cpf/cpf.html) (contém página)
+4. [Validador de CPF](cpf/cpf.html) - página em live: https://zignini.github.io/exercicios/cpf/cpf.html
 
 ¹ - IMC é um índice arbitrário 
 
