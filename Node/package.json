@@ -1,0 +1,14 @@
+{
+  "name": "Practice: get search query from request URL",
+  "version": "1.0.0",
+  "description": "Project to get and work search queries from request URLs, as practice to learn more about npm and Node",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "query-string": "^7.1.1"
+  }
+}

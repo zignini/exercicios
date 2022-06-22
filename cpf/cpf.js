@@ -1,4 +1,15 @@
-console.log("Alô aqui é o JS")
+// console.log("Alô aqui é o JS")
+
+/*
+To-do: 
+1. Incluir máscara
+1. Incluir regexp
+const textoNaoEstruturado = "Meu CPF é 123.456.789-01";
+
+const regex = new RegExp('[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}'); 
+
+console.log(textoNaoEstruturado.match(regex));
+*/ 
 
 function checkNumber() {
     // console.log("Início da checagem")

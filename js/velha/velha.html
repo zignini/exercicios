@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da velha</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <h1 class="page-header" id="h1">Jogo da velha</h1>
+    </div>
+  </div>
+<div class="row">
+  <p id="descricao">
+    Já comecei, agora é a sua vez! Clica ou seleciona onde quer colocar o ◯. 
+  </p>
+</div>
+<div class="row">
+  <div class="col-md-3" id="containerCanvas">
+    <table>
+      <tr>
+        <td id="11">
+          <button class="moveButton" id="b11"></button>
+        </td>
+        <td id="12">
+          <button class="moveButton" id="b12"></button>
+        </td>
+        <td id="13">
+          <button class="moveButton" id="b13"></button>
+        </td>
+      </tr>
+      <tr>
+        <td id="21">
+          <button class="moveButton" id="b21"></button>
+        </td>
+        <td id="22">
+          <button class="moveButton" id="b22" style="display:none"></button>
+          ✕
+        </td>
+        <td id="23">
+          <button class="moveButton" id="b23"></button>
+        </td>
+      </tr>
+      <tr>
+        <td id="31">
+          <button class="moveButton" id="b31"></button>
+        </td>
+        <td id="32">
+          <button class="moveButton" id="b32"></button>
+        </td>
+        <td id="33">
+          <button class="moveButton"  id="b33"></button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+
+  <!--
+    To-do: radio button para a pessoa escolher quem começa o jogo
+  -->
+
+  <script src="velha.js"></script>
+  <script type="module" src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
