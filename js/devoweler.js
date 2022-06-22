@@ -1,3 +1,5 @@
+// To-do: incluir vogais com acento (diacríticos)
+
 function devoweler(voweled) {
     let vowels = ["a", "e", "i", "o", "u"];
     for (let vowel of vowels) {
