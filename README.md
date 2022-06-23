@@ -13,11 +13,11 @@ Repositório com exercícios de aprendizado e prática.
 ¹ - IMC é um índice arbitrário 
 
 ## Fazendo 
-1. [Jogo da velha](js/velha/velha.js) - página: https://zignini.github.io/exercicios/cpf/cpf.html
+1. [Jogo da velha](js/velha/velha.js) - página: https://zignini.github.io/exercicios/js/velha/velha.html
 
 ## A fazer 
 2. Censor (inspirado nos exercícios de Python)
-3. Latinizador (inspirado nos exercícios de Python)
+3. Tradutor português-latinária (inspirado nos exercícios de Python)
 4. Jogo da memória
 5. Batalha naval (inspirado nos exercícios de Python)
 6. Caixa automático
