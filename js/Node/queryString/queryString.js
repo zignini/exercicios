@@ -11,16 +11,26 @@ const server = http.createServer((req, res) => {
   // Pegar a pergunta na URL 
   const reqUrl = req.url;
   const params = queryString.parse(url.parse(reqUrl, true).search)
-  console.log(params)
+  
+  // console.log(params)
 
   // Verificar pergunta e escolher resposta
+   
+  let resposta;
   
-  
+  if (params.pergunta == "melhor-filme") {
+    resposta = "Star Wars";
+  } else if (params.pergunta == "melhor-tecnologia-backend") {
+    resposta = "Node.js"
+  } else {
+    resposta = "Não sei, desculpe :("
+  };
+
   // Retornar a resposta 
 
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World');
+  res.end(resposta);
 });
 
 server.listen(port, hostname, () => {

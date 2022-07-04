@@ -1,0 +1,14 @@
+{
+  "name": "marvel",
+  "version": "1.0.0",
+  "description": "Practice fetch and GET using the Marvel API",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http": "^0.0.1-security"
+  }
+}
