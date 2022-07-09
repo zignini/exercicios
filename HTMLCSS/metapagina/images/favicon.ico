@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32.0px"
+   height="32.0px"
+   viewBox="0 0 32.0 32.0"
+   version="1.1"
+   id="SVGRoot"
+   sodipodi:docname="Eyecon.ico"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview14"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="11.930303"
+     inkscape:cx="28.373127"
+     inkscape:cy="22.715265"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid20" />
+  </sodipodi:namedview>
+  <defs
+     id="defs9" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <circle
+       style="fill:#000000;stroke-width:1.13772"
+       id="path129"
+       cx="16.009651"
+       cy="15.925832"
+       r="15.925832" />
+    <ellipse
+       style="fill:#ffffff;stroke-width:0.964078"
+       id="circle241"
+       cx="16.009651"
+       cy="15.925832"
+       rx="13.168148"
+       ry="13.830328" />
+    <circle
+       style="fill:#000000;stroke-width:0.670656"
+       id="circle245"
+       cx="16.26111"
+       cy="16.177292"
+       r="9.3878584" />
+    <ellipse
+       style="fill:#ffffff;stroke-width:0.454158"
+       id="circle243"
+       cx="16.09347"
+       cy="16.344934"
+       rx="6.3166618"
+       ry="6.3982725" />
+    <ellipse
+       style="fill:#000000;stroke-width:0.194356"
+       id="ellipse248"
+       cx="16.09347"
+       cy="16.344934"
+       rx="2.7032003"
+       ry="2.7381253" />
+  </g>
+</svg>

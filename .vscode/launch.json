@@ -2,6 +2,23 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Python: Current File",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Launch Program",
+      "program": "${workspaceFolder}/app.js",
+      "request": "launch",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "node"
+    },
+    {
       "type": "pwa-node",
       "request": "launch",
       "name": "Launch Program",
@@ -15,7 +32,13 @@
       "type": "pwa-node",
       "name": "Run Current File",
       "request": "launch",
-      "program": "${workspaceFolder}\\js\\temp.js"
+      "program": "${workspaceFolder}\\js\\Node\\HTTP\\app.js"
+    },
+    {
+      "type": "pwa-node",
+      "name": "Run Current File",
+      "request": "launch",
+      "program": "${workspaceFolder}\\js\\Node\\HTTP\\app.js"
     }
   ]
 }
