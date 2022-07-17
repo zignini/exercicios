@@ -1,4 +1,5 @@
 // imports
+import {example, results} from "./app.js";
 
 // DOM
 
@@ -14,6 +15,14 @@ search.addEventListener("Form", () => {
   // list.append(term);
 });
 
-function manualListener() {
-  console.log("Oi, tô ouvindo!")
-}
+// function manualListener() {
+//   var confirmp = document.createElement("p");
+//   var confirmvalue = document.append("Oi, estou ouvindo!");
+//   confirmp.append(confirmvalue);
+//   heroesDiv.append(confirmp);
+// }
+
+
+for (var charIndex = 0; charIndex <= results.length(); charIndex ++) {
+  console.log(example[charIndex]);
+};

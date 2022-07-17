@@ -6,28 +6,88 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Isso é o título da página</title>
-  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+  <link rel="icon" href="./images/favicon.ico">
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-  <h1>Isso é um título 1 (heading 1)</h1>
+  <h1 class="title" id="h1">Isso é um título 1 (heading 1)</h1>
   <p>Isso é um parágrafo.</p>
 
-  <h2>Isso é um título 2 (heading 2)</h2>
-  <p title="Essa é uma tooltip.">Isso é outro parágrafo. </p>
-  <p>Eis aqui um <a href="https://www.w3schools.com/html/html_basic.asp">link para outra página</a>.</p>
-  <p>O curso que deu origem a essa página é o do W3schools. Eles têm outro curso, cujo mascote é o Lynx: </p>
+  <h2 class="title" id="h2">Isso é um título 2 (heading 2)</h2>
+
+  <p title="Essa é uma tooltip.">Isso é outro parágrafo, só que com um segredo! Passe o mouse aqui, se estiver no computador. </p>
+
+  <p>Eis aqui um <a href="https://www.w3schools.com/html/html_basic.asp">link para o Google</a>. Achei que você poderia estar precisando.</p>
+  
+  <p>Um dos cursos que deu origem a essa página é o do W3schools. Eles têm outro curso, de programação, cujo mascote é o
+    Lynx: </p>
   <img src="https://www.w3schools.com/images/w3lynx_200.png"
     alt="Lynx, o mascote do curso interativo de programação da W3Schools" height="100">
+  <br><br>
+  <p>A imagem acima está certa, mas abaixo é uma imagem "desligada"</p>
+  <img disabled alt="Imagem desligada pelo atributo de disabled">
+  <br>
+  <h2 class="title">E, agora, uma tabela</h2>
 
-  <h3>Isso é um título 3 (heading 3)</h3>
-  <h4>Isso é um título 4 (heading 4)</h3>
-    <h5>Isso é um título 5 (heading 5)</h3>
-      <h6>Isso é um título 6 (heading 6), o último nível possível de título</h3>
+  <table>
+    <caption>Uma tabela complexa</caption>
+    <colgroup>
+      <col>
+      <col span="2">
+      <col span="2">
+    </colgroup>
+    <thead>
+      <tr>
+        <th rowspan="2">Coluna de títulos de linhas</th>
+        <th colspan="2" scope="colgroup">Título da 1ª coluna</th>
+        <th colspan="2" scope="colgroup">Título da 2ª coluna</th>
+      </tr>
+      <tr>
+        <th scope="col">1ª subcoluna da 1ª coluna</th>
+        <th scope="col">2ª subcoluna da 1ª coluna</th>
+        <th scope="col">1ª subcoluna da 2ª coluna</th>
+        <th scope="col">2ª subcoluna da 1ª coluna</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1ª linha</th>
+        <td>111</td>
+        <td>112</td>
+        <td>121</td>
+        <td>122</td>
+      </tr>
+      <tr>
+        <th scope="row">2ª linha</th>
+        <td>211</td>
+        <td>212</td>
+        <td>221</td>
+        <td>222</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <h2 class="title">Contato</h2>
+  <p>Abaixo, as minhas informações de contato</p>
+  <address>
+    <p>Jacqueline Pruschinski</p>
+    <p><a href="mailto:spammeieme@gmail.com">spammeieme@gmail.com</a></p>
+  </address>
+  <br>
 
-<pre>
+  <h3 class="title">Isso é um título 3 (heading 3)</h3>
+  <p>
+    É possível dar <em>ênfase</em> ou <strong>reforçar</strong> o que você quiser usando formatação de texto no próprio
+    HTML.
+  </p>
+  <h4 class="title">Isso é um título 4 (heading 4)</h3>
+    <h5 class="title">Isso é um título 5 (heading 5)</h3>
+      <h6 class="title">Isso é um título 6 (heading 6), o último nível possível de título</h3>
+        <br>
+        <pre>
 
-  Esse é um trecho pré-formatado (fonte monoespaçada). E agora um trecho do poema "A flor e a náusea", de Carlos Drummond de Andrade:
+  Esse é um trecho pré-formatado. E, agora um trecho do poema "A flor e a náusea", de Carlos Drummond de Andrade:
 
   Preso à minha classe e a algumas roupas
   vou de branco pela rua cinzenta.
@@ -43,6 +103,27 @@
 
 </pre>
 
+        <p>Se eu quisesse citar alguma autoridade, provavelmente apelaria para a <abbr
+            title="Mozilla Developer Network, da Mozilla, que é dona do Firefox">MDN</abbr>. Por exemplo:</p>
+        <blockquote cite="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/blockquote">O Elemento HTML
+          <code>&lt;blockquote&gt;</code> (ou Elemento HTML de citação de bloco) indica que o texto incluído é uma longa
+          citação. Normalmente, este é processado visualmente pelo recuo (ver <a
+            href="https://developer.mozilla.org/en-US/docs/HTML/Element/blockquote#Notes">Notas</a> sobre como mudá-lo).
+          A URL para a fonte da citação pode ser dada usando o atributo cite, enquanto uma representação de texto da
+          fonte pode ser dada usando o <code>&lt;cite&gt;</code> elemento.
+        </blockquote>
+
+        <p>Como você pôde ver, a tradução automática ficou horrível. Especialmente no trecho que diz: <q>uma
+            representação de texto da fonte pode
+            ser dada usando o <code>&lt;cite&gt;</code> elemento</q>. Esse trecho quase não dá para entender. </p>
+
+        <p>Eis abaixo uma linha para fechar esta página.</p>
+        <hr>
+
+        <footer>
+          <small>Esse é o rodapé da página. <br> Ele tem informações menos importantes, como essa. <br> </small>
+          <small><a href="#h1">Voltar ao topo ↑</a></small>
+        </footer>
 
 </body>
 

@@ -1,0 +1,28 @@
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+pre {
+  font: 400;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+table, th, td {
+  padding: 5px;
+  border: 1px solid darkgray;
+  border-collapse: collapse;
+}
+
+.title {
+  font-size: larger;
+  font-weight: bold;
+}
+
+div#caixa {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  margin: 10%;
+  padding: 0 20px;
+}

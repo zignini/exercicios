@@ -1,12 +1,10 @@
-// Got this from https://scriptverse.academy/tutorials/nodejs-router.html
-
-const http = require('http');
-const fs = require('fs');
+import {createServer } from 'http';
+import { stat, createReadStream } from 'fs';
 
 const hostname = '127.0.0.1';
 const port = 3000;
 
-const server = http.createServer((req, res) => {
+const server = createServer((req, res) => {
 	let htmlFile = '';
 	switch(req.url) {
 		case '/':
@@ -14,9 +12,6 @@ const server = http.createServer((req, res) => {
 			break;
 		case '/about':
 			htmlFile = 'about.html';
-			break;
-		case '/services':
-			htmlFile = 'services.html';
 			break;
 		default:
 			break;
@@ -27,11 +22,11 @@ const server = http.createServer((req, res) => {
 });
 
 function render(res, htmlFile) {
-  	fs.stat(`./${htmlFile}`, (err, stats) => {
+  	stat(`./${htmlFile}`, (err, stats) => {
 		res.statusCode = 200;
 		res.setHeader('Content-Type', 'text/html');
   		if(stats) {
-		  	fs.createReadStream(htmlFile).pipe(res);
+		  	createReadStream(htmlFile).pipe(res);
   		} else {
   			res.statusCode = 404;
   			res.end('Sorry, page not found!');
@@ -42,3 +37,4 @@ function render(res, htmlFile) {
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
+

@@ -36,6 +36,8 @@ Repositório com exercícios de aprendizado e prática.
 4. [Marvel](js/Node/Marvel/index.js)
 5. [GraphQL](js/Node/GraphQL/src/main.js) 
 6. [Rotas](js/Node/routes/src/app.js)
+7. [Site em Django](python/Django/index.html)
+8. [API requests em Flask](python/Flask/hello%20world%20request/hello.py))
 
 ## A fazer 
 2. Censor (inspirado nos exercícios de Python)
