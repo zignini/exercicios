@@ -1,4 +1,4 @@
-// Pilha, LIFO (last in, first out) // 
+// Stack, pilha - LIFO (last in, first out) // 
 
 /*
 > Basic operations of a stack
@@ -22,13 +22,19 @@ function myPush(element, stack) {
 myPush("banana", myStack);
 */
 
-function myPop(stack) {
-  var length = stack.length;
-  var lastIndex = length - 1;
-  stack = 
+// Queue, fila
+
+// List, lista
+
+// Array, vetor 
+
+class anArray {
+  constructor(...elements) {
+    this.elements = [ elements ];
+  };
+  
 }
 
+var newArray = new anArray(1, 2, 3, 4, 5);
 
-// Fila 
-
-// Lista 
+console.log(newArray);
