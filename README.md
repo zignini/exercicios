@@ -4,7 +4,7 @@ Repositório com exercícios de aprendizado e prática.
 
 ## Índice estático 
 
-1. [Criptograma de César](js/caesarsCipher.js) [JavaScript]
+1. [Criptograma de César](js/caesarCipher/caesarCipher.js) [JavaScript]
 1. [Array: mínimo, máximo e média](js/array.js) [JavaScript]
 1. [IMC: cálculo](js/IMC.js) [JavaScript]
 1. [Par: o número é par?](js/par.js) [JavaScript]
