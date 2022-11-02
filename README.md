@@ -4,6 +4,7 @@ Repositório com exercícios de aprendizado e prática.
 
 ## Índice estático 
 
+1. [Criptograma de César](js/caesarsCipher.js) [JavaScript]
 1. [Array: mínimo, máximo e média](js/array.js) [JavaScript]
 1. [IMC: cálculo](js/IMC.js) [JavaScript]
 1. [Par: o número é par?](js/par.js) [JavaScript]
@@ -19,7 +20,7 @@ Repositório com exercícios de aprendizado e prática.
 9. [Calculando médias de uma prova de um curso fictício](python/exam_statistics.py) [Python]
 10. [Olá, mundo](python/helloworld.py) [Python]
 11. [Aprendendo funções lambda (anônimas)](python/lambda_functions.py) [Python]
-12. [Aprendendo lis comprehension](python/list_comprehension.py) [Python]
+12. [Aprendendo list comprehension](python/list_comprehension.py) [Python]
 13. [Calculando a mediana](python/median.py) [Python]
 14. [Latinizador](python/pyg_latin.py) [Python]
 15. [Construtor de formatos](python/shapes.py) [Python]

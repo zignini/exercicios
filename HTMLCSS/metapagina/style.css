@@ -26,3 +26,12 @@ div#caixa {
   margin: 10%;
   padding: 0 20px;
 }
+
+table, th, td {
+  border-collapse: collapse !important;
+  border: 1px solid !important;
+  border-right: 1px solid !important;
+  border-left: 1px solid !important;
+  border-top: 1px solid !important;
+  border-bottom: 1px solid !important;
+}
