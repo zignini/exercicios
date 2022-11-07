@@ -51,9 +51,9 @@ createResultMessage = function (score) {
   if (score === 0) {
     return "Que pena, você não acertou nenhuma!"
   } else if (score <= 40) {
-    return "Você quase acertou metade. Recomendamos conviver com mais gatinhos."
+    return `Você quase acertou metade ou ${score}%. Recomendamos conviver com mais gatinhos.`
   } else if (score <= 80) {
-    return "Ufa! Você quase acertou todas! Continue observando gatinhos."
+    return `Ufa! Você quase acertou todas ou ${score}%! Continue observando gatinhos.`
   } else {
     return "Uau! Quer dizer, miau! Você acertou todas! Você deve ser um expert em expressão corporal felina!"
   }
