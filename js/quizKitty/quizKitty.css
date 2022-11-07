@@ -1,0 +1,12 @@
+.options {
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.options img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 200px;
+}
