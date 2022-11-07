@@ -4,11 +4,12 @@ Repositório com exercícios de aprendizado e prática.
 
 ## Índice estático 
 
-1. [Criptograma de César](js/caesarCipher/caesarCipher.js) [JavaScript]
+1. [Quiz felino](js/quizKitty/quizKitty.html) - página: https://exercicios-ten.vercel.app/js/quizKitty/quizKitty.html [JavaScript]
+1. [Criptograma de César](js/caesarCipher/caesarCipher.js) - página: https://exercicios-ten.vercel.app/js/caesarCipher/caesarCipher.html [JavaScript]
 1. [Array: mínimo, máximo e média](js/array.js) [JavaScript]
 1. [IMC: cálculo](js/IMC.js) [JavaScript]
 1. [Par: o número é par?](js/par.js) [JavaScript]
-1. [Validador de CPF](js/node/cpf/cpf.html) - página: https://zignini.github.io/exercicios/js/node/cpf/cpf.html [JavaScript]
+1. [Validador de CPF](js/node/cpf/cpf.html) - página: https://exercicios-ten.vercel.app/js/cpf/cpf.html [JavaScript]
 1. [Removedor de vogais](js/devoweler.js) [JavaScript]
 2. [Hello Node](js/Node/hello-node/app.js) [JavaScript]
 3. [Calculador de horário de alarme](python/alarm.py) [Python]
