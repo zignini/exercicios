@@ -47,7 +47,3 @@ Repositório com exercícios de aprendizado e prática.
 1. Caixa automático
 1. Jogo da memória
 1. Mercadinho (inspirado nos exercícios de Python)
-
-## Ideias loucas 
-1. Lista de tarefas
-2. Controle de gastos 
