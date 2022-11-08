@@ -23,7 +23,7 @@ Ps: se você não conseguiu fazer tudo o que foi pedido acima, abra a issue mesm
 Ps2: o uso do Bootstrap (ou qualquer outra lib CSS) é opcional.
 */
 
-const correctAnswers = ['B', 'A', 'A', 'A', 'B']
+const correctAnswers = ['C', 'B', 'C', 'C', 'D']
 
 const form = document.querySelector('form')
 
@@ -33,7 +33,7 @@ const resultDiv = document.createElement('div')
 resultDiv.classList.add('container')
 
 const h2 = document.createElement('h2')
-formDiv.insertAdjacentElement('afterend', resultDiv)
+formDiv.insertAdjacentElement('beforebegin', resultDiv)
 resultDiv.appendChild(h2)
   
 const resultP = document.createElement('p')
@@ -51,9 +51,9 @@ createResultMessage = function (score) {
   if (score === 0) {
     return "Que pena, você não acertou nenhuma!"
   } else if (score <= 40) {
-    return `Você quase acertou metade ou ${score}%. Recomendamos conviver com mais gatinhos.`
+    return `Você quase acertou metade (${score}%). Recomendamos conviver com mais gatinhos.`
   } else if (score <= 80) {
-    return `Ufa! Você quase acertou todas ou ${score}%! Continue observando gatinhos.`
+    return `Ufa! Você quase acertou todas (${score}%)! Continue observando gatinhos.`
   } else {
     return "Uau! Quer dizer, miau! Você acertou todas! Você deve ser um expert em expressão corporal felina!"
   }
@@ -75,6 +75,12 @@ form.addEventListener('submit', event => {
   h2.textContent = "Resultado"
   
   resultP.textContent = createResultMessage(score)
+
+  resultDiv.classList.add('alert')
+resultDiv.classList.add('alert-primary')
+
+
+  scrollTo(0,0)
 })
 
 
