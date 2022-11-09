@@ -1,4 +1,4 @@
-const correctAnswers = ['B', 'A', 'A', 'A', 'B']
+const correctAnswers = ['C', 'B', 'C', 'C', 'D']
 
 const form = document.querySelector('form')
 
@@ -26,7 +26,7 @@ createResultMessage = function (score) {
   if (score === 0) {
     return "Que pena, você não acertou nenhuma!"
   } else if (score <= 40) {
-    return `Você quase acertou metade (${score}%). Recomendamos conviver com mais gatinhos.`
+    return `Você quase acertou metade (${score}%). Recomendamos conviver mais com gatinhos.`
   } else if (score <= 80) {
     return `Ufa! Você quase acertou todas (${score}%)! Continue observando gatinhos.`
   } else {
@@ -34,29 +34,35 @@ createResultMessage = function (score) {
   }
 }
 
+const getUserAnswers = function () {
+  userAnswers = [] 
+  correctAnswers.forEach((_, index) => {
+    const uswerAnswer = form[`question${index + 1}Option`].value
+    userAnswers.push(uswerAnswer)
+  });
+  return userAnswers
+}
+
+const showScore = score => { 
+  h2.textContent = "Resultado"
+  resultP.textContent = createResultMessage(score)
+  resultDiv.classList.add('alert')
+  resultDiv.classList.add('alert-primary')
+
+  scrollTo({
+    top: 0, 
+    left: 0,
+    behavior: 'smooth'
+  })
+}
+
 form.addEventListener('submit', event => {
   event.preventDefault()
 
-  submittedAnswers = []
-  
-  submittedAnswers.push(form.question1Option.value)
-  submittedAnswers.push(form.question2Option.value)
-  submittedAnswers.push(form.question3Option.value)
-  submittedAnswers.push(form.question4Option.value)
-  submittedAnswers.push(form.question5Option.value)
+  submittedAnswers = getUserAnswers()
 
-  compareAnswers(submittedAnswers, correctAnswers)
+  const score = compareAnswers(submittedAnswers, correctAnswers)
 
-  h2.textContent = "Resultado"
-  
-  resultP.textContent = createResultMessage(score)
-
-  resultDiv.classList.add('alert')
-resultDiv.classList.add('alert-primary')
-
-
-  scrollTo(0,0)
+  showScore(score)
+ 
 })
-
-
-
