@@ -35,11 +35,9 @@ createResultMessage = function (score) {
 }
 
 const getUserAnswers = function () {
-  userAnswers = [] 
-  correctAnswers.forEach((_, index) => {
-    const uswerAnswer = form[`question${index + 1}Option`].value
-    userAnswers.push(uswerAnswer)
-  });
+  let userAnswers = correctAnswers.map((_, index) => {
+    return form[`question${index + 1}Option`].value
+  })
   return userAnswers
 }
 
