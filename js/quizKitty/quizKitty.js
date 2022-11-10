@@ -15,11 +15,9 @@ const resultP = document.createElement('p')
 resultDiv.appendChild(resultP)
 
 const compareAnswers = function (array1, array2) {
-  score = 0
-  array1.forEach((element, index) => {
-    element === array2[index]? score += 20 : score += 0
-  });
-  return score
+  return array1.reduce((accumulator, element, index) => {
+    element === array2[index]? accumulator += 20 : accumulator += 0
+  return accumulator}, 0)
 }
 
 createResultMessage = function (score) { 
