@@ -32,12 +32,8 @@ createResultMessage = function (score) {
   }
 }
 
-const getUserAnswers = function () {
-  let userAnswers = correctAnswers.map((_, index) => {
-    return form[`question${index + 1}Option`].value
-  })
-  return userAnswers
-}
+const getUserAnswers = () => correctAnswers.map((_, index) => 
+  form[`question${index + 1}Option`].value )
 
 const showScore = score => { 
   h2.textContent = "Resultado"
