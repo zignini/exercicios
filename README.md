@@ -4,6 +4,7 @@ Repositório com exercícios de aprendizado e prática.
 
 ## Índice estático 
 
+1. [Lista de tarefas](js/toDo/toDo.html) - página: https://exercicios-ten.vercel.app/js/toDo/toDo.html [JavaScript]
 1. [Quiz felino](js/quizKitty/quizKitty.html) - página: https://exercicios-ten.vercel.app/js/quizKitty/quizKitty.html [JavaScript]
 1. [Criptograma de César](js/caesarCipher/caesarCipher.js) - página: https://exercicios-ten.vercel.app/js/caesarCipher/caesarCipher.html [JavaScript]
 1. [Array: mínimo, máximo e média](js/array.js) [JavaScript]
