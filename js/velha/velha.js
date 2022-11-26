@@ -9,7 +9,8 @@ To do
 
 var moveButtons = document.querySelectorAll(".moveButton");
 
-moveButtons.forEach(moveButton => {moveButton.addEventListener("click", () => {userMove(moveButton)}, false)});
+moveButtons.forEach(moveButton => { moveButton.addEventListener("click", () => 
+    { userMove(moveButton) }, false) });
 
 function userMove(i) {
     i.before("◯");

@@ -1,0 +1,12 @@
+.canvas {
+    display: flex;
+}
+
+.card-container {
+    size: 10px;
+    display: flex;
+}
+
+.card {
+    max-width: 10em;
+}
