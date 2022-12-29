@@ -33,7 +33,7 @@ Repositório com exercícios de aprendizado e prática.
 20. [Corrida de tartarugas](python/turtle_race.py) [Python]
 
 ## Fazendo 
-1. [Jogo da velha](js/velha/velha.js) - página: https://zignini.github.io/exercicios/js/velha/velha.html
+1. [Jogo da velha](js/velha/velha.js)
 2. [HTTP](js/Node/HTTP/app.js)
 3. [CRUD](js/Node/CRUD/CRUD.js) 
 4. [Marvel](js/Node/Marvel/index.js)
